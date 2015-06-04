@@ -69,5 +69,6 @@
     <string name="pref_changelog">"Full changelog on my GitHub"</string>
     <string name="log_widget">"STweaks log widget"</string>
     <string name="log_button">"Save Log"</string>
+    <string name="quotation_marks_text">""</string>
 
 </resources>
