@@ -1,34 +1,32 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@+id/menu_about"
-        android:title="@string/menu_about"
+    <item
+        android:id="@+id/menu_about"
         android:icon="@drawable/ic_about"
-        android:showAsAction="ifRoom"/>
-    <item android:id="@+id/select_profile"
-        android:title="@string/select_profile"
+        android:showAsAction="ifRoom"
+        android:title="@string/menu_about" />
+    <item
+        android:id="@+id/select_profile"
         android:icon="@drawable/ic_select_profile"
-        android:showAsAction="ifRoom"/>
-    <item android:id="@+id/menu_rom_thread"
-        android:title="@string/rom_thread"
+        android:showAsAction="ifRoom"
+        android:title="@string/select_profile" />
+    <item
+        android:id="@+id/menu_rom_thread"
         android:orderInCategory="100"
-        android:showAsAction="never"  />
-    <item android:id="@+id/menu_community"
-        android:title="@string/community"
+        android:showAsAction="never"
+        android:title="@string/rom_thread" />
+    <item
+        android:id="@+id/menu_community"
         android:orderInCategory="110"
-        android:showAsAction="never"  />
-    <item android:id="@+id/menu_kernel_bug"
-        android:title="@string/kernel_bug"
-        android:orderInCategory="120"
-        android:showAsAction="never"  />
-    <item android:id="@+id/menu_app_bug"
-        android:title="@string/app_bug"
-        android:orderInCategory="130"
-        android:showAsAction="never"  />
-    <item android:id="@+id/menu_reset"
-        android:title="@string/reset_settings"
+        android:showAsAction="never"
+        android:title="@string/community" />
+    <item
+        android:id="@+id/menu_reset"
         android:orderInCategory="150"
-        android:showAsAction="never"/>
-    <item android:id="@+id/menu_settings"
-        android:title="@string/settings"
+        android:showAsAction="never"
+        android:title="@string/reset_settings" />
+    <item
+        android:id="@+id/menu_settings"
         android:orderInCategory="160"
-        android:showAsAction="never"/>
+        android:showAsAction="never"
+        android:title="@string/settings" />
 </menu>

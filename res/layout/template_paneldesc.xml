@@ -1,6 +1,3 @@
-
-<TextView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/SyhTextView"
-    style="?panelDescLayout">
-</TextView>
+    style="?panelDescLayout"></TextView>

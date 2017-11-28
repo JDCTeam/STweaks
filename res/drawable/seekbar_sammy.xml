@@ -3,9 +3,8 @@
         <shape>
             <corners android:radius="5dp" />
             <gradient
-                android:startColor="@color/ltgray"
-                android:endColor="@color/ltgray">
-            </gradient>
+                android:endColor="@color/ltgray"
+                android:startColor="@color/ltgray"></gradient>
         </shape>
     </item>
     <item android:id="@android:id/progress">
@@ -13,22 +12,19 @@
             <shape>
                 <corners android:radius="5dp" />
                 <gradient
-                    android:startColor="@color/sammyyellow"
-                    android:endColor="@color/sammyyellow">
-                </gradient>
+                    android:endColor="@color/sammyyellow"
+                    android:startColor="@color/sammyyellow"></gradient>
             </shape>
         </clip>
     </item>
     <item android:id="@android:id/secondaryProgress">
         <clip>
-            <inset
-                android:insetTop="4dp">
+            <inset android:insetTop="4dp">
                 <shape>
                     <corners android:radius="5dp" />
                     <gradient
-                        android:startColor="@color/cmdkgray"
-                        android:endColor="@color/cmdkgray">
-                    </gradient>
+                        android:endColor="@color/cmdkgray"
+                        android:startColor="@color/cmdkgray"></gradient>
                 </shape>
             </inset>
         </clip>

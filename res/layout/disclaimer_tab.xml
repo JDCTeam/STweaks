@@ -1,50 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <ImageView
         android:id="@+id/jdcTeamLogo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:src="@drawable/ic_jdcteam_logo"
         android:layout_gravity="center_horizontal|top"
         android:layout_marginTop="@dimen/size_large"
-        tools:ignore="ContentDescription"/>
+        android:gravity="center"
+        android:src="@drawable/ic_jdcteam_logo"
+        tools:ignore="ContentDescription" />
 
     <ImageView
         android:id="@+id/disclaimer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/disclaimer"
         android:layout_gravity="center_horizontal|top"
         android:layout_marginTop="@dimen/size_large"
-        android:paddingStart="@dimen/size_large"
         android:paddingEnd="@dimen/size_large"
-        tools:ignore="ContentDescription"/>
+        android:paddingStart="@dimen/size_large"
+        android:src="@drawable/disclaimer"
+        tools:ignore="ContentDescription" />
 
     <TextView
         android:id="@+id/textViewDisclaimer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/disclaimer"
-        android:textStyle="italic"
-        android:gravity="center"
         android:layout_marginTop="@dimen/size_large"
-        android:paddingTop="@dimen/size_medium"
-        android:paddingStart="@dimen/size_medium"
+        android:gravity="center"
         android:paddingEnd="@dimen/size_medium"
-        android:textColor="@color/mdgray"/>
+        android:paddingStart="@dimen/size_medium"
+        android:paddingTop="@dimen/size_medium"
+        android:text="@string/disclaimer"
+        android:textColor="@color/mdgray"
+        android:textStyle="italic" />
 
     <CheckBox
         android:id="@+id/donotshow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/do_not_show"
-        android:textColor="@color/mdgray">
-    </CheckBox>
+        android:textColor="@color/mdgray"></CheckBox>
 
 </LinearLayout>

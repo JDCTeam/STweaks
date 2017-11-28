@@ -7,15 +7,11 @@
     <string name="bottom_decline">Discard</string>
     <string name="startmenu_initial" translatable="false" />
     <string name="startmenu_nokernelsupport">Sorry, no kernel support!</string>
-    <string name="coming_soon">Coming soon!</string>
     <string name="reset_settings">Reset settings to default</string>
     <string name="developer_info" tools:ignore="TypographyDashes">Developed by Gokhan Moral\nUpdated by B--B</string>
     <string name="startmenu_no_root">No root access, or timeout!</string>
     <string name="rom_thread">Rom Thread</string>
     <string name="community">JDCTeam community on G+</string>
-    <string name="kernel_bug">Bug report for Kernel</string>
-    <string name="app_bug">Bug report for App</string>
-    <string name="logging">Collecting logs for 30 seconds, please wait until STweaks will close</string>
     <string name="wait">Loading profile, wait until STweaks exit and restart by itself</string>
     <string name="log_done">All Data collected and ready at /sdcard/alucard-debug.zip</string>
     <string name="select_profile">STweaks Profiles</string>
@@ -64,11 +60,11 @@
     <string name="pref_animation_out_default_decline" translatable="false">"fadescaleout"</string>
     <string name="pref_theme">"Theme Chooser"</string>
     <string name="pref_description_theme">"Choose your favourite theme"</string>
-    <string name="pref_theme_default" translatable="false">"light"</string>
+    <string name="pref_theme_default" translatable="false">"sammy"</string>
     <string name="theme_change">"STweaks will now restart with the selected theme"</string>
     <string name="pref_changelog">"Full changelog on my GitHub"</string>
     <string name="log_widget">"STweaks log widget"</string>
     <string name="log_button">"Save Log"</string>
-    <string name="quotation_marks_text">""</string>
+    <string name="quotation_marks_text" translatable="false">""</string>
 
 </resources>

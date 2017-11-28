@@ -1,66 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        	  xmlns:tools="http://schemas.android.com/tools"
-    		  android:id="@+id/MainLayout"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:orientation="vertical">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/MainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-        <TextView
+    <TextView
         android:id="@+id/textViewStart"
-        android:layout_centerInParent="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
         android:text="@string/startmenu_initial"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:gravity="center" />
-                      	
-	<LinearLayout
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <LinearLayout
+        android:id="@+id/AcceptDeclineLayout"
         style="?acceptDeclineLayout"
-	    android:id="@+id/AcceptDeclineLayout"
         android:elevation="@dimen/size_large"
         tools:ignore="UnusedAttribute">
 
-		<Button
+        <Button
+            android:id="@+id/AcceptButton"
             style="?android:attr/buttonBarButtonStyle"
-	        android:id="@+id/AcceptButton"
-	        android:layout_width="0dip"
-	        android:layout_height="match_parent"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/size_small"
             android:layout_weight="1"
-            android:layout_margin="@dimen/size_small"
+            android:text="@string/bottom_accept"
             android:textSize="18sp"
-            android:textStyle="bold"
-	        android:text="@string/bottom_accept"
-	        />
+            android:textStyle="bold" />
 
-		<Button
+        <Button
+            android:id="@+id/DeclineButton"
             style="?android:attr/buttonBarButtonStyle"
-	        android:id="@+id/DeclineButton"
-	        android:layout_width="0dip"
-	        android:layout_height="match_parent"
-	        android:layout_weight="1"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
             android:layout_margin="@dimen/size_small"
+            android:layout_weight="1"
+            android:text="@string/bottom_decline"
             android:textSize="18sp"
-            android:textStyle="bold"
-	        android:text="@string/bottom_decline"
-	        />
-	</LinearLayout>
-	
-	<android.support.v4.view.ViewPager
-        xmlns:android="http://schemas.android.com/apk/res/android"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
-        style="?viewpagerLayout"
         android:id="@+id/pager"
-    	tools:context=".MainActivity"/>
-       
+        style="?viewpagerLayout"
+        tools:context=".MainActivity" />
+
 </RelativeLayout>
 
-<!-- 
-<android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/pager"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity" />
--->
+    <!--
+    <android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity" />
+    -->

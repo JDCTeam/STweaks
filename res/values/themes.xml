@@ -11,6 +11,7 @@
         <item name="android:layout_marginBottom">@dimen/size_large</item>
         <item name="android:background">@color/cmwhite</item>
     </style>
+
     <style name="template_control_light">
         <item name="android:orientation">vertical</item>
         <item name="android:layout_width">match_parent</item>
@@ -20,6 +21,7 @@
         <item name="android:paddingEnd">@dimen/size_small</item>
         <item name="android:paddingBottom">@dimen/size_large</item>
     </style>
+
     <style name="template_paneldesc_light">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
@@ -27,6 +29,7 @@
         <item name="android:padding">@dimen/size_medium</item>
         <item name="android:textColor">@color/black</item>
     </style>
+
     <style name="template_panelname_light">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">35dp</item>
@@ -41,6 +44,7 @@
         <item name="android:background">@drawable/light_panel_background</item>
         <item name="android:layout_marginTop">@dimen/size_medium</item>
     </style>
+
     <style name="template_seekbar_light">
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">wrap_content</item>
@@ -53,6 +57,7 @@
         <item name="android:maxHeight">7dip</item>
         <item name="android:thumbOffset">11dip</item>
     </style>
+
     <style name="template_seekbar_text_light">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
@@ -62,6 +67,7 @@
         <item name="android:paddingEnd">@dimen/size_medium</item>
         <item name="android:background">@drawable/light_panel_background</item>
     </style>
+
     <style name="template_accept_decline_light">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">65dp</item>
@@ -73,6 +79,7 @@
         <item name="android:layout_marginBottom">@dimen/size_medium</item>
         <item name="android:background">@color/cmwhite</item>
     </style>
+
     <style name="template_spinner_light">
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">wrap_content</item>
@@ -83,12 +90,14 @@
         <item name="android:layout_marginBottom">@dimen/size_large</item>
         <item name="android:prompt">@string/title_activity_main</item>
     </style>
+
     <style name="template_spinner_item_light">
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:singleLine">true</item>
         <item name="android:background">@color/cmwhite</item>
     </style>
+
     <style name="template_switch_light">
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">wrap_content</item>
@@ -100,6 +109,7 @@
         <item name="android:layout_marginTop">@dimen/size_small</item>
         <item name="android:checked">false</item>
     </style>
+
     <style name="template_scrollview_light">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
@@ -110,6 +120,7 @@
         <item name="android:layout_marginTop">@dimen/size_large</item>
         <item name="android:background">@color/cmwhite</item>
     </style>
+
     <style name="template_text_desc_light">
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">wrap_content</item>
@@ -119,18 +130,21 @@
         <item name="android:textStyle">italic</item>
         <item name="android:textColor">@color/black</item>
     </style>
+
     <style name="template_text_name_light">
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/cmgray</item>
     </style>
+
     <style name="template_viewpager_light">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
         <item name="android:layout_above">@id/AcceptDeclineLayout</item>
         <item name="android:layout_alignWithParentIfMissing">true</item>
     </style>
+
     <style name="template_panel_separator_light">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">1dp</item>
@@ -154,6 +168,7 @@
         <item name="android:layout_marginBottom">@dimen/size_medium</item>
         <item name="android:background">@color/dkgray</item>
     </style>
+
     <style name="template_control_dark">
         <item name="android:orientation">vertical</item>
         <item name="android:layout_width">match_parent</item>
@@ -164,6 +179,7 @@
         <item name="android:paddingBottom">@dimen/size_large</item>
         <!--<item name="android:textColor">@color/cmwhite</item>-->
     </style>
+
     <style name="template_paneldesc_dark">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
@@ -171,6 +187,7 @@
         <item name="android:padding">@dimen/size_medium</item>
         <item name="android:textColor">@color/ltgray</item>
     </style>
+
     <style name="template_panelname_dark">
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">35dp</item>
@@ -184,6 +201,7 @@
         <item name="android:background">@drawable/dark_panel_background</item>
         <item name="android:layout_marginTop">@dimen/size_medium</item>
     </style>
+
     <style name="template_seekbar_dark">
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">wrap_content</item>
@@ -196,6 +214,7 @@
         <item name="android:maxHeight">7dip</item>
         <item name="android:thumbOffset">11dip</item>
     </style>
+
     <style name="template_seekbar_text_dark">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
@@ -204,6 +223,7 @@
         <item name="android:paddingEnd">@dimen/size_medium</item>
         <item name="android:background">@drawable/dark_panel_background</item>
     </style>
+
     <style name="template_accept_decline_dark">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">65dp</item>
@@ -215,6 +235,7 @@
         <item name="android:layout_marginBottom">@dimen/size_medium</item>
         <item name="android:background">@color/dkgray</item>
     </style>
+
     <style name="template_spinner_dark">
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">wrap_content</item>
@@ -225,12 +246,14 @@
         <item name="android:layout_marginBottom">@dimen/size_large</item>
         <item name="android:prompt">@string/title_activity_main</item>
     </style>
+
     <style name="template_spinner_item_dark">
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:singleLine">true</item>
         <item name="android:background">@color/dkgray</item>
     </style>
+
     <style name="template_switch_dark">
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">wrap_content</item>
@@ -243,6 +266,7 @@
         <item name="android:textColor">@color/ltgray</item>
         <item name="android:checked">false</item>
     </style>
+
     <style name="template_scrollview_dark">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
@@ -253,6 +277,7 @@
         <item name="android:layout_marginTop">@dimen/size_large</item>
         <item name="android:background">@color/dkgray</item>
     </style>
+
     <style name="template_text_desc_dark">
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">wrap_content</item>
@@ -262,18 +287,21 @@
         <item name="android:textStyle">italic</item>
         <item name="android:textColor">@color/ltgray</item>
     </style>
+
     <style name="template_text_name_dark">
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/cmwhite</item>
     </style>
+
     <style name="template_viewpager_dark">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
         <item name="android:layout_above">@id/AcceptDeclineLayout</item>
         <item name="android:layout_alignWithParentIfMissing">true</item>
     </style>
+
     <style name="template_panel_separator_dark">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">1dp</item>
@@ -296,6 +324,7 @@
         <item name="android:layout_marginBottom">@dimen/size_large</item>
         <item name="android:background">@color/cmwhite</item>
     </style>
+
     <style name="template_control_sammy">
         <item name="android:orientation">vertical</item>
         <item name="android:layout_width">match_parent</item>
@@ -305,6 +334,7 @@
         <item name="android:paddingEnd">@dimen/size_small</item>
         <item name="android:paddingBottom">@dimen/size_large</item>
     </style>
+
     <style name="template_paneldesc_sammy">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
@@ -312,6 +342,7 @@
         <item name="android:padding">@dimen/size_medium</item>
         <item name="android:textColor">@color/black</item>
     </style>
+
     <style name="template_panelname_sammy">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">35dp</item>
@@ -326,6 +357,7 @@
         <item name="android:background">@drawable/sammy_panel_background</item>
         <item name="android:layout_marginTop">@dimen/size_medium</item>
     </style>
+
     <style name="template_seekbar_sammy">
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">wrap_content</item>
@@ -338,6 +370,7 @@
         <item name="android:maxHeight">7dip</item>
         <item name="android:thumbOffset">11dip</item>
     </style>
+
     <style name="template_seekbar_text_sammy">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
@@ -347,6 +380,7 @@
         <item name="android:paddingEnd">@dimen/size_medium</item>
         <item name="android:background">@drawable/sammy_panel_background</item>
     </style>
+
     <style name="template_accept_decline_sammy">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">65dp</item>
@@ -358,6 +392,7 @@
         <item name="android:layout_marginBottom">@dimen/size_medium</item>
         <item name="android:background">@color/cmwhite</item>
     </style>
+
     <style name="template_spinner_sammy">
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">wrap_content</item>
@@ -368,12 +403,14 @@
         <item name="android:layout_marginBottom">@dimen/size_large</item>
         <item name="android:prompt">@string/title_activity_main</item>
     </style>
+
     <style name="template_spinner_item_sammy">
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:singleLine">true</item>
         <item name="android:background">@color/cmwhite</item>
     </style>
+
     <style name="template_switch_sammy">
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">wrap_content</item>
@@ -385,6 +422,7 @@
         <item name="android:layout_marginTop">@dimen/size_small</item>
         <item name="android:checked">false</item>
     </style>
+
     <style name="template_scrollview_sammy">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
@@ -395,6 +433,7 @@
         <item name="android:layout_marginTop">@dimen/size_large</item>
         <item name="android:background">@color/cmwhite</item>
     </style>
+
     <style name="template_text_desc_sammy">
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">wrap_content</item>
@@ -404,18 +443,21 @@
         <item name="android:textStyle">italic</item>
         <item name="android:textColor">@color/black</item>
     </style>
+
     <style name="template_text_name_sammy">
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/sammytext</item>
     </style>
+
     <style name="template_viewpager_sammy">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
         <item name="android:layout_above">@id/AcceptDeclineLayout</item>
         <item name="android:layout_alignWithParentIfMissing">true</item>
     </style>
+
     <style name="template_panel_separator_sammy">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">1dp</item>

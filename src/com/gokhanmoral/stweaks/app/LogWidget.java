@@ -12,7 +12,7 @@ import android.widget.Toast;
 
 
 public class LogWidget extends AppWidgetProvider {
-    private static final String PICK_LOG    = "logButtonClick";
+    private static final String PICK_LOG = "logButtonClick";
 
     @Override
     public void onUpdate(Context context, AppWidgetManager appWidgetManager, int[] appWidgetIds) {

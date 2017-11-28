@@ -6,63 +6,61 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Switch;
 
-public class SyhSwitch extends SyhControl implements OnClickListener{
+public class SyhSwitch extends SyhControl implements OnClickListener {
 
-	SyhSwitch(Activity activityIn) {
-		super(activityIn);
-	}
+    public String label;
+    private Switch syhswitch;
+    SyhSwitch(Activity activityIn) {
+        super(activityIn);
+    }
 
-	private Switch syhswitch;
-	public String label;
-	
-	@Override
-	public void createInternal() {		
-		
-		//Assumption: valueFromScript is set correctly. 
+    @Override
+    public void createInternal() {
 
-		syhswitch = (Switch)LayoutInflater.from(context).inflate(R.layout.template_switch, controlLayout, false);
-		syhswitch.setText(label);
-		syhswitch.setOnClickListener(this);
+        //Assumption: valueFromScript is set correctly.
 
-		applyScriptValueToUserInterface();
-		
-		controlLayout.addView(syhswitch);
-	}
+        syhswitch = (Switch) LayoutInflater.from(context).inflate(R.layout.template_switch, controlLayout, false);
+        syhswitch.setText(label);
+        syhswitch.setOnClickListener(this);
 
-	@Override
-	public void onClick(View v) {
-		//-- This not true >>>  this.valueInput = Boolean.toString(syhswitch.isChecked());
-		this.valueFromUser = convertFromControlFormatToScriptFormat(syhswitch.isChecked());
-		this.vci.valueChanged();
-	}
+        applyScriptValueToUserInterface();
 
-	@Override
-	protected void applyScriptValueToUserInterface() {
-		//-- This not true >>> boolean hardware = Boolean.parseBoolean(this.valueHardware);
+        controlLayout.addView(syhswitch);
+    }
 
-		if (syhswitch != null)
-		{
-			boolean hardware = convertFromScriptFormatToControlFormat(valueFromScript);
-			syhswitch.setChecked(hardware);
-		}		
-		valueFromUser = valueFromScript;
-	}
+    @Override
+    public void onClick(View v) {
+        //-- This not true >>>  this.valueInput = Boolean.toString(syhswitch.isChecked());
+        this.valueFromUser = convertFromControlFormatToScriptFormat(syhswitch.isChecked());
+        this.vci.valueChanged();
+    }
 
-	Boolean convertFromScriptFormatToControlFormat(String input) {
-		boolean hardware = input.equals("on");
-		return hardware;
-	}
+    @Override
+    protected void applyScriptValueToUserInterface() {
+        //-- This not true >>> boolean hardware = Boolean.parseBoolean(this.valueHardware);
 
-	String convertFromControlFormatToScriptFormat(Boolean input) {
-		String scriptVal = (input) ? ("on"): ("off");
-		return scriptVal;
-	}
+        if (syhswitch != null) {
+            boolean hardware = convertFromScriptFormatToControlFormat(valueFromScript);
+            syhswitch.setChecked(hardware);
+        }
+        valueFromUser = valueFromScript;
+    }
 
-	
-	@Override
-	protected String getDefaultValue() {
-		return "off";
-	}
+    Boolean convertFromScriptFormatToControlFormat(String input) {
+        boolean hardware = input.equals("on");
+        return hardware;
+    }
+
+    String convertFromControlFormatToScriptFormat(Boolean input) {
+        String scriptVal = (input) ? ("on") : ("off");
+        return scriptVal;
+    }
+
+
+    @Override
+    protected String getDefaultValue() {
+        return "off";
+    }
 
 
 }

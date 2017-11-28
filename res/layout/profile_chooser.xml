@@ -1,92 +1,91 @@
-
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    		  android:id="@+id/ProfileChooserLayout"
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:orientation="vertical"
-              android:gravity="center">
+    android:id="@+id/ProfileChooserLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
 
     <Button
         android:id="@+id/profilecheck"
-        android:layout_gravity="center_horizontal"
         style="?android:attr/buttonBarButtonStyle"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:textSize="18sp"
-        android:textAlignment="center"
+        android:layout_gravity="center_horizontal"
         android:gravity="fill_vertical"
-        android:paddingStart="@dimen/size_large"
+        android:onClick="profileCheck"
         android:paddingEnd="@dimen/size_large"
+        android:paddingStart="@dimen/size_large"
         android:text="@string/profile_check"
-        android:onClick="profileCheck" />
+        android:textAlignment="center"
+        android:textSize="18sp" />
 
     <Button
         android:id="@+id/extremeperformance"
-        android:layout_gravity="center_horizontal"
         style="?android:attr/buttonBarButtonStyle"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:textSize="18sp"
-        android:textAlignment="center"
+        android:layout_gravity="center_horizontal"
         android:gravity="fill_vertical"
-        android:paddingStart="@dimen/size_large"
+        android:onClick="extremePerformance"
         android:paddingEnd="@dimen/size_large"
+        android:paddingStart="@dimen/size_large"
         android:text="@string/extreme_performance"
-        android:onClick="extremePerformance"/>
+        android:textAlignment="center"
+        android:textSize="18sp" />
 
     <Button
         android:id="@+id/performance"
-        android:layout_gravity="center_horizontal"
         style="?android:attr/buttonBarButtonStyle"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:textSize="18sp"
-        android:textAlignment="center"
+        android:layout_gravity="center_horizontal"
         android:gravity="fill_vertical"
-        android:paddingStart="@dimen/size_large"
+        android:onClick="performance"
         android:paddingEnd="@dimen/size_large"
+        android:paddingStart="@dimen/size_large"
         android:text="@string/performance"
-        android:onClick="performance" />
+        android:textAlignment="center"
+        android:textSize="18sp" />
 
     <Button
         android:id="@+id/defaultprofile"
-        android:layout_gravity="center_horizontal"
         style="?android:attr/buttonBarButtonStyle"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:textSize="18sp"
-        android:textAlignment="center"
+        android:layout_gravity="center_horizontal"
         android:gravity="fill_vertical"
-        android:paddingStart="@dimen/size_large"
+        android:onClick="defaultProfile"
         android:paddingEnd="@dimen/size_large"
+        android:paddingStart="@dimen/size_large"
         android:text="@string/default_profile"
-        android:onClick="defaultProfile" />
+        android:textAlignment="center"
+        android:textSize="18sp" />
 
     <Button
         android:id="@+id/battery"
-        android:layout_gravity="center_horizontal"
         style="?android:attr/buttonBarButtonStyle"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:textSize="18sp"
-        android:textAlignment="center"
+        android:layout_gravity="center_horizontal"
         android:gravity="fill_vertical"
-        android:paddingStart="@dimen/size_large"
+        android:onClick="battery"
         android:paddingEnd="@dimen/size_large"
+        android:paddingStart="@dimen/size_large"
         android:text="@string/battery"
-        android:onClick="battery" />
+        android:textAlignment="center"
+        android:textSize="18sp" />
 
     <Button
         android:id="@+id/extremebattery"
-        android:layout_gravity="center_horizontal"
         style="?android:attr/buttonBarButtonStyle"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:textSize="18sp"
-        android:textAlignment="center"
+        android:layout_gravity="center_horizontal"
         android:gravity="fill_vertical"
-        android:paddingStart="@dimen/size_large"
+        android:onClick="extremeBattery"
         android:paddingEnd="@dimen/size_large"
+        android:paddingStart="@dimen/size_large"
         android:text="@string/extreme_battery"
-        android:onClick="extremeBattery" />
+        android:textAlignment="center"
+        android:textSize="18sp" />
 </LinearLayout>

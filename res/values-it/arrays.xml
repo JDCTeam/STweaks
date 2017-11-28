@@ -1,65 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array
-        name="pref_launcher_icon_entries">
+    <string-array name="pref_launcher_icon_entries">
         <item>Icona Material</item>
         <item>Icona Stock</item>
         <item>Nessuna Icona</item>
     </string-array>
-    <string-array
-        name="pref_launcher_icon_values">
+    <string-array name="pref_launcher_icon_values">
         <item>material</item>
         <item>stock</item>
         <item>noicon</item>
     </string-array>
 
-    <string-array
-        name="pref_animation_in_entries">
+    <string-array name="pref_animation_in_entries">
         <item>Appari</item>
         <item>Scivola</item>
         <item>Appari e scala</item>
     </string-array>
-    <string-array
-        name="pref_animation_in_values">
+    <string-array name="pref_animation_in_values">
         <item>fadein</item>
         <item>scalein</item>
         <item>fadescalein</item>
     </string-array>
 
-    <string-array
-        name="pref_animation_out_accept_entries">
+    <string-array name="pref_animation_out_accept_entries">
         <item>Scompari</item>
         <item>Scivola</item>
         <item>Scompari e Scivola</item>
     </string-array>
-    <string-array
-        name="pref_animation_out_accept_values">
+    <string-array name="pref_animation_out_accept_values">
         <item>fadeout</item>
         <item>scaleout</item>
         <item>fadescaleout</item>
     </string-array>
 
-    <string-array
-        name="pref_animation_out_decline_entries">
+    <string-array name="pref_animation_out_decline_entries">
         <item>Scompari</item>
         <item>Scivola</item>
         <item>Scompari e Scivola</item>
     </string-array>
-    <string-array
-        name="pref_animation_out_decline_values">
+    <string-array name="pref_animation_out_decline_values">
         <item>fadeout</item>
         <item>scaleout</item>
         <item>fadescaleout</item>
     </string-array>
 
-    <string-array
-        name="pref_theme_entries">
+    <string-array name="pref_theme_entries">
         <item>Tema Chiaro</item>
         <item>Tema Scuro</item>
         <item>Tema Samsung</item>
     </string-array>
-    <string-array
-        name="pref_theme_values">
+    <string-array name="pref_theme_values">
         <item>light</item>
         <item>dark</item>
         <item>sammy</item>

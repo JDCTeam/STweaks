@@ -1,15 +1,15 @@
 <Button xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_gravity="center_horizontal"
-    style="?android:attr/buttonBarButtonStyle"
     android:id="@+id/SyhButton"
+    style="?android:attr/buttonBarButtonStyle"
     android:layout_width="match_parent"
     android:layout_height="60dp"
-    android:textSize="18sp"
+    android:layout_gravity="center_horizontal"
     android:gravity="fill_vertical"
-    android:paddingStart="@dimen/size_medium"
     android:paddingEnd="@dimen/size_medium"
-    android:text="@string/title_activity_main" />
+    android:paddingStart="@dimen/size_medium"
+    android:text="@string/title_activity_main"
+    android:textSize="18sp" />
 
-        <!-- 
-        android:textStyle="bold" 
-        -->
+    <!--
+    android:textStyle="bold"
+    -->

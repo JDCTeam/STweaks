@@ -1,45 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
     <ListPreference
-        android:key="pref_launcher_icon"
-        android:title="@string/pref_launcher_icon"
+        android:defaultValue="@string/pref_launcher_icon_default"
         android:dialogTitle="@string/pref_launcher_icon_description"
         android:entries="@array/pref_launcher_icon_entries"
         android:entryValues="@array/pref_launcher_icon_values"
-        android:defaultValue="@string/pref_launcher_icon_default" />
+        android:key="pref_launcher_icon"
+        android:title="@string/pref_launcher_icon" />
     <ListPreference
-        android:key="pref_animation_in"
-        android:title="@string/pref_animation_in"
+        android:defaultValue="@string/pref_animation_in_default"
         android:dialogTitle="@string/pref_animation_in_description"
         android:entries="@array/pref_animation_in_entries"
         android:entryValues="@array/pref_animation_in_values"
-        android:defaultValue="@string/pref_animation_in_default" />
+        android:key="pref_animation_in"
+        android:title="@string/pref_animation_in" />
     <ListPreference
-        android:key="pref_animation_out_accept"
-        android:title="@string/pref_animation_out_accept"
+        android:defaultValue="@string/pref_animation_out_default_accept"
         android:dialogTitle="@string/pref_animation_out_description_accept"
         android:entries="@array/pref_animation_out_accept_entries"
         android:entryValues="@array/pref_animation_out_accept_values"
-        android:defaultValue="@string/pref_animation_out_default_accept" />
+        android:key="pref_animation_out_accept"
+        android:title="@string/pref_animation_out_accept" />
     <ListPreference
-        android:key="pref_animation_out_decline"
-        android:title="@string/pref_animation_out_decline"
+        android:defaultValue="@string/pref_animation_out_default_decline"
         android:dialogTitle="@string/pref_animation_out_description_decline"
         android:entries="@array/pref_animation_out_decline_entries"
         android:entryValues="@array/pref_animation_out_decline_values"
-        android:defaultValue="@string/pref_animation_out_default_decline" />
+        android:key="pref_animation_out_decline"
+        android:title="@string/pref_animation_out_decline" />
     <ListPreference
-        android:key="pref_theme"
-        android:title="@string/pref_theme"
+        android:defaultValue="@string/pref_theme_default"
         android:dialogTitle="@string/pref_description_theme"
         android:entries="@array/pref_theme_entries"
         android:entryValues="@array/pref_theme_values"
-        android:defaultValue="@string/pref_theme_default" />
+        android:key="pref_theme"
+        android:title="@string/pref_theme" />
     <Preference
         android:key="pref_changelog"
         android:title="@string/pref_changelog">
         <intent
             android:action="android.intent.action.VIEW"
-            android:data="https://github.com/B--B/STweaks/commits/jdcteam"/>
+            android:data="https://github.com/B--B/STweaks/commits/jdcteam" />
     </Preference>
 </PreferenceScreen>

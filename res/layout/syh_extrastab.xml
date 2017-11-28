@@ -1,55 +1,54 @@
-
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-    		  android:id="@+id/SyhExtrasTabLayout"
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:orientation="vertical"
-              android:gravity="center">
-              
-        <TextView
-            android:id="@+id/textViewDevInfo"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:text="@string/developer_info"
-            android:textStyle="italic"
-            android:gravity="center"/>
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/SyhExtrasTabLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
 
-        <ImageView
-            android:id="@+id/jdcTeamLogo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:src="@drawable/ic_jdcteam_logo"
-            android:layout_gravity="center_horizontal|top"
-            android:layout_marginTop="@dimen/size_medium"
-            android:layout_marginBottom="@dimen/size_medium"
-            tools:ignore="ContentDescription"/>
+    <TextView
+        android:id="@+id/textViewDevInfo"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="@string/developer_info"
+        android:textStyle="italic" />
 
-        <TextView
-            android:id="@+id/textViewContributors"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/contributors"
-            android:textStyle="bold"
-            android:gravity="center"/>
+    <ImageView
+        android:id="@+id/jdcTeamLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginBottom="@dimen/size_medium"
+        android:layout_marginTop="@dimen/size_medium"
+        android:gravity="center"
+        android:src="@drawable/ic_jdcteam_logo"
+        tools:ignore="ContentDescription" />
 
-          <TextView
+    <TextView
+        android:id="@+id/textViewContributors"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/contributors"
+        android:textStyle="bold" />
+
+    <TextView
         android:id="@+id/textViewAppVersion"
         android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:textStyle="italic"
-        android:gravity="center"/>
-        <!--android:textColor="@color/black"-->
-        
-        <TextView
+        android:layout_height="35dp"
+        android:gravity="center"
+        android:textStyle="italic" />
+    <!--android:textColor="@color/black"-->
+
+    <TextView
         android:id="@+id/textViewKernelVersion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="10dip"
-        android:paddingStart="@dimen/size_medium"
+        android:layout_margin="10dp"
         android:paddingEnd="@dimen/size_medium"
-        android:layout_margin="10dp"/>
-        <!--android:textColor="@color/black"-->
-                      	
+        android:paddingStart="@dimen/size_medium"
+        android:paddingTop="4dip" />
+    <!--android:textColor="@color/black"-->
+
 </LinearLayout>

@@ -6,17 +6,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 class SyhTab {
-	public String name;
-	public final List<SyhPane> panes;
+    public final List<SyhPane> panes;
+    public String name;
 
-    public SyhTab()
-	{
-		name = "";
-		panes = new ArrayList<>();
+    public SyhTab() {
+        name = "";
+        panes = new ArrayList<>();
     }
-	
-	public View getCustomView()
-	{
-		return null;
-	}
+
+    public View getCustomView() {
+        return null;
+    }
 }

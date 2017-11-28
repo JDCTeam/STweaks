@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <style name="LightTheme" parent="android:Theme.Material.Light.DarkActionBar">
         <item name="android:colorPrimary">@color/cmgray</item>
         <item name="android:colorPrimaryDark">@color/cmdkgray</item>
@@ -19,6 +20,7 @@
         <item name="viewpagerLayout">@style/template_viewpager_light</item>
         <item name="panelSeparator">@style/template_panel_separator_light</item>
     </style>
+
     <style name="DarkTheme" parent="android:Theme.Material">
         <item name="contentLayout">@style/content_layout_dark</item>
         <item name="controlLayout">@style/template_control_dark</item>
@@ -36,6 +38,7 @@
         <item name="viewpagerLayout">@style/template_viewpager_dark</item>
         <item name="panelSeparator">@style/template_panel_separator_dark</item>
     </style>
+
     <style name="SammyTheme" parent="android:Theme.Material.Light.DarkActionBar">
         <item name="contentLayout">@style/content_layout_sammy</item>
         <item name="controlLayout">@style/template_control_sammy</item>

@@ -12,58 +12,51 @@ import android.widget.Spinner;
 import java.util.ArrayList;
 import java.util.List;
 
-public final class SyhSpinner extends SyhControl implements OnItemSelectedListener{
-	
-	SyhSpinner(Activity activityIn) {
-		super(activityIn);
-	}
+public final class SyhSpinner extends SyhControl implements OnItemSelectedListener {
 
-	private Spinner spnnr = null;
-	private final List<String> nameList = new ArrayList<>();
-	private final List<String> valueList = new ArrayList<>();
-	
-	private int findValueInValueList(String value)
-	{
-		int index = -1;
-		for (int i = 0; i < valueList.size(); i++)
-		{
-			if (valueList.get(i).equalsIgnoreCase(value))
-			{
-				index = i;
-				break;
-			}
-		}
-		return index;
-	}
-	
-	private void setSpinnerFromHardwareValue()
-	{
-		//Log.w("spinner", this.name +" setSpinnerFromHardwareValue!");
-		if (spnnr != null)
-		{
-			int index = findValueInValueList(valueFromScript);
-			if (-1 == index) index = 0;
-			spnnr.setSelection(index);
-		}
-		valueFromUser = valueFromScript;		
-	}
-	
-	@Override
-	public void createInternal() {
-		
-		//Assumption: valueFromScript is set correctly.
-		
-		if (this.name.equalsIgnoreCase("FLL Tuning"))
-		{
-			Log.e("e","e");
-		}
+    private final List<String> nameList = new ArrayList<>();
+    private final List<String> valueList = new ArrayList<>();
+    private Spinner spnnr = null;
+    SyhSpinner(Activity activityIn) {
+        super(activityIn);
+    }
 
-		//-- Set spinner programmatically
-		//spnnr = new Spinner(context);
-		//spnnr.setBackgroundColor(Color.argb(100, 143, 188, 143));
-		
-		//Create spinner from xml template
-		
+    private int findValueInValueList(String value) {
+        int index = -1;
+        for (int i = 0; i < valueList.size(); i++) {
+            if (valueList.get(i).equalsIgnoreCase(value)) {
+                index = i;
+                break;
+            }
+        }
+        return index;
+    }
+
+    private void setSpinnerFromHardwareValue() {
+        //Log.w("spinner", this.name +" setSpinnerFromHardwareValue!");
+        if (spnnr != null) {
+            int index = findValueInValueList(valueFromScript);
+            if (-1 == index) index = 0;
+            spnnr.setSelection(index);
+        }
+        valueFromUser = valueFromScript;
+    }
+
+    @Override
+    public void createInternal() {
+
+        //Assumption: valueFromScript is set correctly.
+
+        if (this.name.equalsIgnoreCase("FLL Tuning")) {
+            Log.e("e", "e");
+        }
+
+        //-- Set spinner programmatically
+        //spnnr = new Spinner(context);
+        //spnnr.setBackgroundColor(Color.argb(100, 143, 188, 143));
+
+        //Create spinner from xml template
+
 		/*
 		 IMPORTANT NOTE:
 		 	In summary to change the text size for a Spinner either:
@@ -84,86 +77,84 @@ public final class SyhSpinner extends SyhControl implements OnItemSelectedListen
 			
 			http://androidcookbook.com/Recipe.seam;jsessionid=0443546CEE776318BF6D21552A9D1864?recipeId=4012
 		*/
-		
-		spnnr = (Spinner) LayoutInflater.from(context).inflate(R.layout.template_spinner, controlLayout, false);
 
-		ArrayAdapter<String> dataAdapter = new ArrayAdapter<>(context, R.layout.template_spinner_item, nameList); //custom spinner
-		//-- ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(context, android.R.layout.simple_spinner_item, nameList);
-		//-- CustomArrayAdapter<String> dataAdapter = new CustomArrayAdapter<String>(context, nameList);
-		
-		//-- dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_item); //no radio buttons
-		dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item); //radio buttons
-		//-- dataAdapter.setDropDownViewResource(R.layout.template_spinner_dropdown_item); //custom dropdowns
+        spnnr = (Spinner) LayoutInflater.from(context).inflate(R.layout.template_spinner, controlLayout, false);
 
-		spnnr.setAdapter(dataAdapter);
-		spnnr.setOnItemSelectedListener(this);
-		setSpinnerFromHardwareValue();
-		controlLayout.addView(spnnr);
-	}
-	
-	public void addNameAndValue(String name, String value){
-		nameList.add(name);
-		valueList.add(value);
-	}
+        ArrayAdapter<String> dataAdapter = new ArrayAdapter<>(context, R.layout.template_spinner_item, nameList); //custom spinner
+        //-- ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(context, android.R.layout.simple_spinner_item, nameList);
+        //-- CustomArrayAdapter<String> dataAdapter = new CustomArrayAdapter<String>(context, nameList);
+
+        //-- dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_item); //no radio buttons
+        dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item); //radio buttons
+        //-- dataAdapter.setDropDownViewResource(R.layout.template_spinner_dropdown_item); //custom dropdowns
+
+        spnnr.setAdapter(dataAdapter);
+        spnnr.setOnItemSelectedListener(this);
+        setSpinnerFromHardwareValue();
+        controlLayout.addView(spnnr);
+    }
+
+    public void addNameAndValue(String name, String value) {
+        nameList.add(name);
+        valueList.add(value);
+    }
 
 //	public void clearNameAndValues(){
 //		nameList.clear();
 //		valueList.clear();
 //	}
 
-	@Override
-	public void onItemSelected(AdapterView<?> parent, View view, 
-            int pos, long id) 
-	{
-		//Log.w("spinner", this.name +" onItemSelected!");
-		valueFromUser = valueList.get(pos);
-		//-- ((TextView)parent.getChildAt(0)).setTextColor(Color.WHITE);//TODO: Change selected text color
+    @Override
+    public void onItemSelected(AdapterView<?> parent, View view,
+                               int pos, long id) {
+        //Log.w("spinner", this.name +" onItemSelected!");
+        valueFromUser = valueList.get(pos);
+        //-- ((TextView)parent.getChildAt(0)).setTextColor(Color.WHITE);//TODO: Change selected text color
 
-		if (isChanged())
-    	{
-    		this.vci.valueChanged();//TODO: changing text color back to black!!!
-    	}
+        if (isChanged()) {
+            this.vci.valueChanged();//TODO: changing text color back to black!!!
+        }
     }
-	
-	@Override
-	public void onNothingSelected(AdapterView<?> arg0) {
-		// TODO Auto-generated method stub
-	}
 
-	//private static class CustomArrayAdapter<T> extends ArrayAdapter<T>
-	//{
-	//    public CustomArrayAdapter(Context ctx, List<T> objects)
-	//    {
-	//        super(ctx, android.R.layout.simple_spinner_item, objects);
-	//    }
+    @Override
+    public void onNothingSelected(AdapterView<?> arg0) {
+        // TODO Auto-generated method stub
+    }
 
-	    //other constructors
-	//    @Override
-	//    public View getDropDownView(int position, View convertView, ViewGroup parent)
-	//    {
-	//        View view = super.getView(position, convertView, parent);
+    //private static class CustomArrayAdapter<T> extends ArrayAdapter<T>
+    //{
+    //    public CustomArrayAdapter(Context ctx, List<T> objects)
+    //    {
+    //        super(ctx, android.R.layout.simple_spinner_item, objects);
+    //    }
 
-	        //we know that simple_spinner_item has android.R.id.text1 TextView:
+    //other constructors
+    //    @Override
+    //    public View getDropDownView(int position, View convertView, ViewGroup parent)
+    //    {
+    //        View view = super.getView(position, convertView, parent);
+
+    //we know that simple_spinner_item has android.R.id.text1 TextView:
 
 	        /* if(isDroidX) {*/
-	//            TextView text = (TextView)view.findViewById(android.R.id.text1);
-	//            text.setTextColor(Color.RED);//choose your color :)
+    //            TextView text = (TextView)view.findViewById(android.R.id.text1);
+    //            text.setTextColor(Color.RED);//choose your color :)
 	        /*}*/
 
-	 //       return view;
-	 //   }
-	//}
+    //       return view;
+    //   }
+    //}
 
-	@Override
-	protected void applyScriptValueToUserInterface() {
-		setSpinnerFromHardwareValue();	
-	}
+    @Override
+    protected void applyScriptValueToUserInterface() {
+        setSpinnerFromHardwareValue();
+    }
 
-	
-	@Override
-	protected String getDefaultValue() {
-		return valueList.get(0);
-	}
 
-	
+    @Override
+    protected String getDefaultValue() {
+        return valueList.get(0);
+    }
+
+
 }

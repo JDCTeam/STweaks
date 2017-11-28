@@ -20,7 +20,7 @@ public class STweaksSettingsActivity extends PreferenceActivity {
         getFragmentManager().beginTransaction().replace(android.R.id.content, new STweaksPreferenceFragment()).commit();
     }
 
-    public static class STweaksPreferenceFragment extends PreferenceFragment  implements SharedPreferences.OnSharedPreferenceChangeListener {
+    public static class STweaksPreferenceFragment extends PreferenceFragment implements SharedPreferences.OnSharedPreferenceChangeListener {
 
         @Override
         public void onCreate(final Bundle savedInstanceState) {
@@ -28,7 +28,7 @@ public class STweaksSettingsActivity extends PreferenceActivity {
             addPreferencesFromResource(R.xml.stweaks_settings);
             getPreferenceScreen().getSharedPreferences()
                     .registerOnSharedPreferenceChangeListener(this);
-            }
+        }
 
         @Override
         public void onDestroy() {
@@ -113,7 +113,7 @@ public class STweaksSettingsActivity extends PreferenceActivity {
                                                 startActivity(restart);
                                             } else {
                                                 Intent restart = getActivity().getPackageManager()
-                                                        .getLaunchIntentForPackage( getActivity().getPackageName() );
+                                                        .getLaunchIntentForPackage(getActivity().getPackageName());
                                                 restart.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                                                 startActivity(restart);
                                             }
@@ -134,7 +134,7 @@ public class STweaksSettingsActivity extends PreferenceActivity {
                                                 startActivity(restart);
                                             } else {
                                                 Intent restart = getActivity().getPackageManager()
-                                                        .getLaunchIntentForPackage( getActivity().getPackageName() );
+                                                        .getLaunchIntentForPackage(getActivity().getPackageName());
                                                 restart.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                                                 startActivity(restart);
                                             }
@@ -155,7 +155,7 @@ public class STweaksSettingsActivity extends PreferenceActivity {
                                                 startActivity(restart);
                                             } else {
                                                 Intent restart = getActivity().getPackageManager()
-                                                        .getLaunchIntentForPackage( getActivity().getPackageName() );
+                                                        .getLaunchIntentForPackage(getActivity().getPackageName());
                                                 restart.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                                                 startActivity(restart);
                                             }
@@ -165,8 +165,8 @@ public class STweaksSettingsActivity extends PreferenceActivity {
                                     .create()
                                     .show();
                             break;
-                        }
-                break;
+                    }
+                    break;
             }
         }
     }

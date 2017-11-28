@@ -3,6 +3,4 @@
     android:initialLayout="@layout/log_widget"
     android:minHeight="72dp"
     android:minWidth="72dp"
-    android:updatePeriodMillis="0"
-    >
-</appwidget-provider>
+    android:updatePeriodMillis="0"></appwidget-provider>

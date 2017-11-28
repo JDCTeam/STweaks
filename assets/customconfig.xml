@@ -1,50 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <settingsRoot>
-  <settingsTab name="GPU">
-    <settingsPane description="" name="GPU scaling settings">
-      <spinner description="Set the maximum frequency the GPU scales up to." name="GPU max frequency"
-               action="generic /sys/devices/system/gpu/max_freq">
-        <spinnerItem name="54 MHz" value="54"/>
-        <spinnerItem name="108 MHz" value="108"/>
-        <spinnerItem name="160 MHz" value="160"/>
-        <spinnerItem name="266 MHz" value="266"/>
-        <spinnerItem name="350 MHz" value="350"/>
-        <spinnerItem name="440 MHz" value="440"/>
-        <spinnerItem name="533 MHz" value="533"/>
-        <spinnerItem name="640 MHz" value="640"/>
-        <spinnerItem name="733 MHz" value="733"/>
-        <spinnerItem name="800 MHz" value="800"/>
+    <settingsTab name="GPU">
+        <settingsPane name="GPU scaling settings" description="">
+            <spinner name="GPU max frequency"
+                action="generic /sys/devices/system/gpu/max_freq" description="Set the maximum frequency the GPU scales up to.">
+                <spinnerItem name="54 MHz" value="54" />
+                <spinnerItem name="108 MHz" value="108" />
+                <spinnerItem name="160 MHz" value="160" />
+                <spinnerItem name="266 MHz" value="266" />
+                <spinnerItem name="350 MHz" value="350" />
+                <spinnerItem name="440 MHz" value="440" />
+                <spinnerItem name="533 MHz" value="533" />
+                <spinnerItem name="640 MHz" value="640" />
+                <spinnerItem name="733 MHz" value="733" />
+                <spinnerItem name="800 MHz" value="800" />
 
-      </spinner>
-      <spinner description="Set the minimum frequency the GPU scales up to." name="GPU min frequency"
-               action="generic /sys/devices/system/gpu/max_freq">
-        <spinnerItem name="54 MHz" value="54"/>
-        <spinnerItem name="108 MHz" value="108"/>
-        <spinnerItem name="160 MHz" value="160"/>
-        <spinnerItem name="266 MHz" value="266"/>
-        <spinnerItem name="350 MHz" value="350"/>
-        <spinnerItem name="440 MHz" value="440"/>
-        <spinnerItem name="533 MHz" value="533"/>
-        <spinnerItem name="640 MHz" value="640"/>
-        <spinnerItem name="733 MHz" value="733"/>
-        <spinnerItem name="800 MHz" value="800"/>
+            </spinner>
+            <spinner name="GPU min frequency"
+                action="generic /sys/devices/system/gpu/max_freq" description="Set the minimum frequency the GPU scales up to.">
+                <spinnerItem name="54 MHz" value="54" />
+                <spinnerItem name="108 MHz" value="108" />
+                <spinnerItem name="160 MHz" value="160" />
+                <spinnerItem name="266 MHz" value="266" />
+                <spinnerItem name="350 MHz" value="350" />
+                <spinnerItem name="440 MHz" value="440" />
+                <spinnerItem name="533 MHz" value="533" />
+                <spinnerItem name="640 MHz" value="640" />
+                <spinnerItem name="733 MHz" value="733" />
+                <spinnerItem name="800 MHz" value="800" />
 
-      </spinner>
+            </spinner>
 
-    </settingsPane>
-    <settingsPane description="" name="GPU voltage control">
-<seekBar  description="" 
-	          name="54 MHz step" 
-                  action="gpuvolt 54"
-                  unit=" mV" min="600" reversed="false" step="25" max="1200"/>
-<seekBar  description="" 
-	          name="108 MHz step" 
-                  action="gpuvolt 108"
-                  unit=" mV" min="600" reversed="false" step="25" max="1200"/>
+        </settingsPane>
+        <settingsPane name="GPU voltage control" description="">
+            <seekBar name="54 MHz step" action="gpuvolt 54" description="" max="1200" min="600"
+                reversed="false" step="25" unit=" mV" />
+            <seekBar name="108 MHz step" action="gpuvolt 108" description="" max="1200" min="600"
+                reversed="false" step="25" unit=" mV" />
 
 
-    </settingsPane>
+        </settingsPane>
 
-  </settingsTab>
+    </settingsTab>
 
 </settingsRoot>

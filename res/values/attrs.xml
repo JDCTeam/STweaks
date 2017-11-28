@@ -2,7 +2,7 @@
 <resources>
 
     <!-- View styles -->
-    <attr name="contentLayout" format="reference|dimension"/>
+    <attr name="contentLayout" format="reference|dimension" />
     <attr name="controlLayout" format="reference|dimension" />
     <attr name="panelDescLayout" format="reference|dimension" />
     <attr name="panelNameLayout" format="reference|dimension" />
