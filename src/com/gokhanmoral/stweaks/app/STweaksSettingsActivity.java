@@ -85,26 +85,17 @@ public class STweaksSettingsActivity extends PreferenceActivity {
                                     Toast.LENGTH_LONG).show();
                             break;
                         case "noicon":
-                            AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-                            builder.setMessage(R.string.icon_prompt)
-                                    .setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
-                                        public void onClick(DialogInterface dialog, int id) {
-                                            getActivity().getPackageManager().setComponentEnabledSetting(
-                                                    new ComponentName("com.gokhanmoral.stweaks.app", "com.gokhanmoral.stweaks.app.MainActivity-NoIcon"),
-                                                    PackageManager.COMPONENT_ENABLED_STATE_ENABLED, PackageManager.DONT_KILL_APP);
-                                            getActivity().getPackageManager().setComponentEnabledSetting(
-                                                    new ComponentName("com.gokhanmoral.stweaks.app", "com.gokhanmoral.stweaks.app.MainActivity-Material"),
-                                                    PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP);
-                                            getActivity().getPackageManager().setComponentEnabledSetting(
-                                                    new ComponentName("com.gokhanmoral.stweaks.app", "com.gokhanmoral.stweaks.app.MainActivity-Stock"),
-                                                    PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP);
-                                            Toast.makeText(getActivity(), R.string.no_icon,
-                                                    Toast.LENGTH_LONG).show();
-                                        }
-                                    })
-                                    .setTitle(R.string.warning)
-                                    .create()
-                                    .show();
+                            getActivity().getPackageManager().setComponentEnabledSetting(
+                                    new ComponentName("com.gokhanmoral.stweaks.app", "com.gokhanmoral.stweaks.app.MainActivity-NoIcon"),
+                                    PackageManager.COMPONENT_ENABLED_STATE_ENABLED, PackageManager.DONT_KILL_APP);
+                            getActivity().getPackageManager().setComponentEnabledSetting(
+                                    new ComponentName("com.gokhanmoral.stweaks.app", "com.gokhanmoral.stweaks.app.MainActivity-Material"),
+                                    PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP);
+                            getActivity().getPackageManager().setComponentEnabledSetting(
+                                    new ComponentName("com.gokhanmoral.stweaks.app", "com.gokhanmoral.stweaks.app.MainActivity-Stock"),
+                                    PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP);
+                            Toast.makeText(getActivity(), R.string.no_icon,
+                                    Toast.LENGTH_LONG).show();
                             break;
                     }
                     break;

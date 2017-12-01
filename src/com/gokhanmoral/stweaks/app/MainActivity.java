@@ -47,9 +47,6 @@ import java.util.ArrayList;
 import java.util.Timer;
 import java.util.TimerTask;
 
-//TODO: check for updates (almost ready)
-//TODO: flash kernel/zip
-
 public class MainActivity extends FragmentActivity implements ActionBar.TabListener, SyhValueChangedInterface, OnClickListener{
 
     /**
@@ -465,11 +462,11 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
         final Context mContext = this;
         switch (item.getItemId()) {
 
-            case R.id.menu_donation: {
+            case R.id.menu_community: {
                 Intent intent = new Intent();
                 intent.setAction(Intent.ACTION_VIEW);
                 intent.addCategory(Intent.CATEGORY_BROWSABLE);
-                intent.setData(Uri.parse("http://forum.xda-developers.com/donatetome.php?u=4899086"));
+                intent.setData(Uri.parse("https://plus.google.com/communities/117218177262334420007"));
                 startActivity(intent);
             }
             return true;
@@ -491,11 +488,11 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
             }
             return true;
 
-            case R.id.menu_kernel_thread: {
+            case R.id.menu_rom_thread: {
                 Intent intent = new Intent();
                 intent.setAction(Intent.ACTION_VIEW);
                 intent.addCategory(Intent.CATEGORY_BROWSABLE);
-                intent.setData(Uri.parse("http://forum.xda-developers.com/showthread.php?t=2590246"));
+                intent.setData(Uri.parse("http://forum.xda-developers.com/galaxy-s4/i9505-orig-develop/exclusive-antaresone-alucard24-s-t3066696"));
                 startActivity(intent);
             }
             return true;
@@ -581,11 +578,6 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
                         .show();
             }
                 return true;
-            case R.id.menu_flash: {
-                Toast toast1 = Toast.makeText(mContext, R.string.coming_soon, Toast.LENGTH_LONG);
-                toast1.show();
-            }
-            return true;
             case R.id.menu_settings:
                 Intent intent = new Intent(MainActivity.this,
                         STweaksSettingsActivity.class);

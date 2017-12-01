@@ -4,7 +4,7 @@
         name="pref_launcher_icon_entries">
         <item>Material Icon</item>
         <item>Stock Icon</item>
-        <item>No Icon\n!!CAUTION!!</item>
+        <item>No Icon</item>
     </string-array>
     <string-array
         name="pref_launcher_icon_values">

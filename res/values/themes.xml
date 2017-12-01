@@ -139,7 +139,7 @@
         <item name="android:layout_marginBottom">@dimen/size_medium</item>
         <item name="android:layout_marginTop">@dimen/size_medium</item>
         <item name="android:background">@color/cmdkgray</item>
-        <item name="android:text">""</item>
+        <item name="android:text">@string/quotation_marks_text</item>
     </style>
 
     <!--Dark Theme Customization-->
@@ -424,6 +424,6 @@
         <item name="android:layout_marginBottom">@dimen/size_medium</item>
         <item name="android:layout_marginTop">@dimen/size_medium</item>
         <item name="android:background">@color/sammyltblue</item>
-        <item name="android:text">""</item>
+        <item name="android:text">@string/quotation_marks_text</item>
     </style>
 </resources>

@@ -7,12 +7,12 @@
         android:title="@string/select_profile"
         android:icon="@drawable/ic_select_profile"
         android:showAsAction="ifRoom"/>
-    <item android:id="@+id/menu_kernel_thread"
-        android:title="@string/kernel_thread"
+    <item android:id="@+id/menu_rom_thread"
+        android:title="@string/rom_thread"
         android:orderInCategory="100"
         android:showAsAction="never"  />
-    <item android:id="@+id/menu_donation"
-        android:title="@string/donation"
+    <item android:id="@+id/menu_community"
+        android:title="@string/community"
         android:orderInCategory="110"
         android:showAsAction="never"  />
     <item android:id="@+id/menu_kernel_bug"
@@ -22,10 +22,6 @@
     <item android:id="@+id/menu_app_bug"
         android:title="@string/app_bug"
         android:orderInCategory="130"
-        android:showAsAction="never"  />
-    <item android:id="@+id/menu_flash"
-        android:title="@string/flash_kernel"
-        android:orderInCategory="140"
         android:showAsAction="never"  />
     <item android:id="@+id/menu_reset"
         android:title="@string/reset_settings"

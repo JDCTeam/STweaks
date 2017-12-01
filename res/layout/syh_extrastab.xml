@@ -1,5 +1,6 @@
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
     		  android:id="@+id/SyhExtrasTabLayout"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
@@ -13,6 +14,17 @@
             android:text="@string/developer_info"
             android:textStyle="italic"
             android:gravity="center"/>
+
+        <ImageView
+            android:id="@+id/jdcTeamLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:src="@drawable/ic_jdcteam_logo"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginTop="@dimen/size_medium"
+            android:layout_marginBottom="@dimen/size_medium"
+            tools:ignore="ContentDescription"/>
 
         <TextView
             android:id="@+id/textViewContributors"

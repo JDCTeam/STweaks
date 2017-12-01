@@ -12,20 +12,18 @@
     <string name="menu_about">Informazioni su STweaks</string>
     <string name="logging">Colleziono i log per 30 secondi, attendi sino alla chiusura di STweaks</string>
     <string name="log_done">Tutti i dati sono stati salvati nel file  /sdcard/alucard-debug.zip</string>
-    <string name="kernel_thread">Discussione sul Kernel</string>
-    <string name="flash_kernel">Flasha un Kernel</string>
+    <string name="rom_thread">Discussione sulla rom</string>
     <string name="extreme_performance">Performance Estreme</string>
     <string name="extreme_battery">Risparmio Energetico Estremo</string>
-    <string name="donation">Fai una donazione</string>
+    <string name="community">JDCTeam su Google+</string>
     <string name="developer_info" tools:ignore="TypographyDashes">Sviluppato da Gokhan Moral \nAggiornato da B--B</string>
     <string name="default_profile">Profilo Predefinito</string>
     <string name="coming_soon">Presto in Arrivo!</string>
-    <string name="check_for_updates">Controlla Aggiornamenti</string>
     <string name="bottom_accept">Applica</string>
     <string name="bottom_decline">Scarta</string>
     <string name="battery">Risparmio Energetico</string>
     <string name="app_bug">Segnala un bug dell\' App</string>
-    <string name="disclaimer">Non siamo responsabili per dispositivi non funzionanti, schede SD morte, guerre termonucleari o se venite licenziati perché la sveglia non suona. Siete pregati di fare qualche ricerca se avete dei dubbi sulle funzionalità incluse in questa applicazione prima di modificare qualsiasi valore! Ricorda, stai scegliendo TU di fare queste modifiche, e se ci punterai il dito contro accusandoci di aver rovinato il tuo dispositivo, ci farai solo fare due risate.\nAlu Team, Tester e Collaboratori\nalucard24, AntaresOne, smeroni68, Jimsilver73, franzyroy, Angelcalibur, -+BB+-</string>
+    <string name="disclaimer">Non siamo responsabili per dispositivi non funzionanti, schede SD morte, guerre termonucleari o se venite licenziati perché la sveglia non suona. Siete pregati di fare qualche ricerca se avete dei dubbi sulle funzionalità incluse in questa applicazione prima di modificare qualsiasi valore! Ricorda, stai scegliendo TU di fare queste modifiche, e se ci punterai il dito contro accusandoci di aver rovinato il tuo dispositivo, ci farai solo fare due risate.\nJDCTeam, Tester e Collaboratori\nalucard24, AntaresOne, smeroni68, Jimsilver73, franzyroy, Angelcalibur, Kryten2k35,-+BB+-</string>
     <string name="appver">Versione Applicazione: </string>
     <string name="appvernf">Versione applicazione non trovata!</string>
     <string name="back">Indietro</string>
@@ -50,7 +48,6 @@
     <string name="pref_launcher_icon">"Icona nel Laucher"</string>
     <string name="no_icon">"Rimuovo l\' icona di STweaks, attendi qualche secondo"</string>
     <string name="change_icon">"Cambio l\' icona di STweaks, attendi qualche secondo"</string>
-    <string name="icon_prompt">"L\' icona di STweaks ora sparirà dal tuo launcher. Se STweaks non è stato integrato nella tua ROM dovrai disinstallarlo manualmente, riavviare il dispositivo e reinstallarlo manualmente!"</string>
     <string name="do_not_show">"Non mostrare più"</string>
     <string name="pref_animation_out_description_accept">"Animazione utilizzata quando si preme Salva"</string>
     <string name="pref_animation_in_description">"Animazione utilizzata dai tasti Salva/Scarta quando appaiono"</string>
@@ -61,7 +58,7 @@
     <string name="pref_description_theme">"Seleziona il tuo tema preferito"</string>
     <string name="pref_theme">"Selezione tema"</string>
     <string name="theme_change">"STweaks ora si riavvierà con il nuovo tema selezionato"</string>
-    <string name="contributors">"Alu Team, Tester e Collaboratori:\nalucard24, AntaresOne, smeroni68, Jimsilver73, franzyroy, Angelcalibur, -+BB+-"</string>
+    <string name="contributors">"JDCTeam, Tester e Collaboratori:\nalucard24, AntaresOne, smeroni68, Jimsilver73, franzyroy, Angelcalibur, Kryten2k35, -+BB+-"</string>
     <string name="pref_changelog">"Changelog completo nel mio GitHub"</string>
     <string name="log_widget">"STweaks log widget"</string>
     <string name="log_button">"Salva Log"</string>

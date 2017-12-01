@@ -7,14 +7,12 @@
     <string name="bottom_decline">Discard</string>
     <string name="startmenu_initial" translatable="false" />
     <string name="startmenu_nokernelsupport">Sorry, no kernel support!</string>
-    <string name="check_for_updates">Check For Updates</string>
-    <string name="flash_kernel">Flash Kernel</string>
     <string name="coming_soon">Coming soon!</string>
     <string name="reset_settings">Reset settings to default</string>
     <string name="developer_info" tools:ignore="TypographyDashes">Developed by Gokhan Moral\nUpdated by B--B</string>
     <string name="startmenu_no_root">No root access, or timeout!</string>
-    <string name="kernel_thread">Kernel Thread</string>
-    <string name="donation">Donation</string>
+    <string name="rom_thread">Rom Thread</string>
+    <string name="community">JDCTeam community on G+</string>
     <string name="kernel_bug">Bug report for Kernel</string>
     <string name="app_bug">Bug report for App</string>
     <string name="logging">Collecting logs for 30 seconds, please wait until STweaks will close</string>
@@ -27,7 +25,7 @@
     <string name="default_profile">Default Profile</string>
     <string name="battery">Battery</string>
     <string name="extreme_battery">Extreme Battery Profile</string>
-    <string name="disclaimer">We\'re not responsible for bricked devices, dead SD cards, thermonuclear war, or you getting fired because the alarm app failed. Please do some research if you have any concerns about features included in this application before changing any value! YOU are choosing to make these modifications, and if you point the finger at us for messing up your device, we will laugh at you.\nAlu Team,Testers and Contributors\nalucard24, AntaresOne, smeroni68, Jimsilver73, franzyroy, Angelcalibur, -+BB+-</string>
+    <string name="disclaimer">We\'re not responsible for bricked devices, dead SD cards, thermonuclear war, or you getting fired because the alarm app failed. Please do some research if you have any concerns about features included in this application before changing any value! YOU are choosing to make these modifications, and if you point the finger at us for messing up your device, we will laugh at you.\nJDCTeam,Testers and Contributors\nalucard24, AntaresOne, smeroni68, Jimsilver73, franzyroy, Angelcalibur, Kryten2k35, -+BB+-</string>
     <string name="reset_settings_prompt">All settings will be reset. You will have to relaunch the application.</string>
     <string name="warning">Warning</string>
     <string name="ok">OK</string>
@@ -54,8 +52,7 @@
     <string name="change_icon">"Changing STweaks icon, just wait a few seconds"</string>
     <string name="no_icon">"Removing STweaks icon, just wait a few seconds"</string>
     <string name="do_not_show">"Do not show again"</string>
-    <string name="icon_prompt">"STweaks icon now will disappear from your launcher. If STweaks has not been integrated in your ROM you will have to manually uninstall it, reboot your device and reinstall STweaks again!"</string>
-    <string name="contributors">"Alu Team,Testers and Contributors:\nalucard24, AntaresOne, smeroni68, Jimsilver73, franzyroy, Angelcalibur, -+BB+-"</string>
+    <string name="contributors">"JDCTeam,Testers and Contributors:\nalucard24, AntaresOne, smeroni68, Jimsilver73, franzyroy, Angelcalibur, Kryten2k35, -+BB+-"</string>
     <string name="pref_animation_in">"Animation In"</string>
     <string name="pref_animation_in_description">"Animation used when Accept/Discard changes buttons become visible"</string>
     <string name="pref_animation_in_default" translatable="false">"fadescalein"</string>
@@ -72,5 +69,6 @@
     <string name="pref_changelog">"Full changelog on my GitHub"</string>
     <string name="log_widget">"STweaks log widget"</string>
     <string name="log_button">"Save Log"</string>
+    <string name="quotation_marks_text">""</string>
 
 </resources>

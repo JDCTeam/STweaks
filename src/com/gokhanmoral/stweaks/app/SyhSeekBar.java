@@ -27,7 +27,7 @@ public final class SyhSeekBar extends SyhControl implements OnSeekBarChangeListe
 
 	
 	//TODO: reverse adjustment needed!
-	//TODO: secondary progress needed!
+	//DONE: secondary progress needed!
 	//DONE: Move to XML
 	
 	@Override

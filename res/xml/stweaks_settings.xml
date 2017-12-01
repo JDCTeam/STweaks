@@ -40,6 +40,6 @@
         android:title="@string/pref_changelog">
         <intent
             android:action="android.intent.action.VIEW"
-            android:data="https://github.com/B--B/STweaks/commits/master"/>
+            android:data="https://github.com/B--B/STweaks/commits/jdcteam"/>
     </Preference>
 </PreferenceScreen>

@@ -6,11 +6,11 @@
     android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/alucardLogo"
+        android:id="@+id/jdcTeamLogo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:src="@drawable/ic_alucard_logo"
+        android:src="@drawable/ic_jdcteam_logo"
         android:layout_gravity="center_horizontal|top"
         android:layout_marginTop="@dimen/size_large"
         tools:ignore="ContentDescription"/>
